@@ -1,4 +1,3 @@
-```bash
 echo "File Extractor"
 
 echo "Enter the webpage link: "
@@ -57,4 +56,3 @@ case $option in
 *) echo "Invalid choice..."
    ;;
 esac
-```

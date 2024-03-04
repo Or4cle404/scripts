@@ -16,7 +16,7 @@ echo "$webpage_link" > webpage_link.txt
 curl -s "$webpage_link" > webpage.html
 
 # Command to extract image files from the link
-grep -o -E 'https?://[^"]+\.(jpg|jpeg|png|gif|apng|avif|svg|webp)' webpage.html > image.txt
+grep -o -E 'https?://[^"]+\.(jpg|jpeg|png|apng|avif|svg|webp)' webpage.html > image.txt
 line_count=$(wc -l < image.txt)
 echo "There are $line_count image files present in the link provided"
 
@@ -26,7 +26,7 @@ line_count1=$(wc -l < audio.txt)
 echo "There are $line_count1 audio files present in the link provided"
 
 # Command to extract video files from the link
-grep -o -E 'https?://[^"]+\.(mp4|webm|ogg)' webpage.html > video.txt
+grep -o -E 'https?://[^"]+\.(mp4|webm|gif|mkv)' webpage.html > video.txt
 line_count2=$(wc -l < video.txt)
 echo "There are $line_count2 video files present in the link provided"
 

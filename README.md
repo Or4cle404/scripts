@@ -1,4 +1,4 @@
-# Media Downloader Script
+# File Extractor Script
 
 ## Overview
 
